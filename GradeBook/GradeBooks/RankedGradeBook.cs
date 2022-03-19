@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace GradeBook.GradeBooks
 {
     public class  RankedGradeBook : BaseGradeBook
@@ -24,6 +25,9 @@ namespace GradeBook.GradeBooks
                 else
                     return 'F';
         }
+
+     
+
 
     }
 }
