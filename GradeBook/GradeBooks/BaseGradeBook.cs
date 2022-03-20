@@ -11,8 +11,8 @@ namespace GradeBook.GradeBooks
 {
     public abstract class BaseGradeBook
     {
-
-        public GradeBookType Type { set; get; }
+        public bool IsWeighted { get; set; }
+        public GradeBookType Type { get; set; }
         public string Name { get; set; }
         public List<Student> Students { get; set; }
 
