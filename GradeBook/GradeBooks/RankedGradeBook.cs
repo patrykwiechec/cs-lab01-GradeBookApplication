@@ -14,8 +14,12 @@ namespace GradeBook.GradeBooks
 
         public override char GetLetterGrade(double averageGrade)
         {
-         //   if (Student.Name.Count >= 5)
-           // {
+            if (Students.Count < 5)
+
+                throw new InvalidOperationException("You need more then 5 students");
+
+            else
+            {
                 if (averageGrade >= 80)
                     return 'A';
                 else if (averageGrade >= 60)
@@ -27,13 +31,9 @@ namespace GradeBook.GradeBooks
                 else
                     return 'F';
             }
-            //else
-            //{
-              //  throw new InvalidOperationException("You need more then 5 students");
-            //}
-      //  }
 
-     
+        }
+
 
 
     }
